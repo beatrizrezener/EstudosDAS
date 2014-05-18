@@ -8,8 +8,6 @@ public class Triangulo {
 			return "Scaleno";
 		} else  if(i == 4 && j == 4 && k == 10){
 			return "Isoceles";
-		} else  if(i == 4 && j == 4 && k == 10){
-			return "Isoceles";
 		} else  if(i == 2 && j == 3 && k == 3){
 			return "Isoceles"; 
 		}

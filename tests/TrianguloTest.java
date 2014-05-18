@@ -21,6 +21,9 @@ public class TrianguloTest {
 		
 		tipoIsoceles = t.verificaTriangulo(4,4,10);
 		assertEquals(tipoIsoceles, "Isoceles");
+		
+		tipoIsoceles = t.verificaTriangulo(5,8,5);
+		assertEquals(tipoIsoceles, "Isoceles");
 	}
 	
 	@Test
