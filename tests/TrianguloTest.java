@@ -41,7 +41,7 @@ public class TrianguloTest {
 	}
 
 	@Test
-	public void testVerificaTriangulo() throws Exception {
+	public void testVerificaTriangulo() throws TrianguloException {
 
 		boolean valido = t.verificaTriangulo(3, 3, 3);
 		assertTrue(valido);
@@ -56,7 +56,7 @@ public class TrianguloTest {
 		try {
 			t.verificaTriangulo(1, 2, 5);
 			fail("ERRROO");
-		} catch (Exception e) {
+		} catch (TrianguloException e) {
 
 		}
 	}

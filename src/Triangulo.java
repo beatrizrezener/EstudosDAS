@@ -22,13 +22,11 @@ public class Triangulo {
 		return "erro";
 	}
 
-	public boolean verificaTriangulo(int i, int j, int k) throws Exception {
+	public boolean verificaTriangulo(int i, int j, int k) throws TrianguloException {
 		if ((i + j) > k && (i + k) > j && (k + j) > i) {
 			return true;
 		} else {
-
-			throw new Exception();
-			
+			throw new TrianguloException();
 		}
 	}
 
