@@ -62,5 +62,16 @@ public class eratostenesTest {
 	 assertEquals(esperado, result);
 	}
 
+	@Test
+	public void testNine() {
+	 setaArray(9);
+     esperado.add(2);
+     esperado.add(3);
+     esperado.add(5);
+     esperado.add(7);
+	 assertEquals(esperado, result);
+	}
+
+	
 }
 
