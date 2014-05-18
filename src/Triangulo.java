@@ -5,7 +5,7 @@ public class Triangulo {
 		if (i == j && i == k && j == k){
 			return "Equilátero";
 		}
-	     if(i==2 && j==1 && k==4){
+	     if(i != j && j != k  && k !=i){
 			return "Scaleno";
 		} 
 	     if(i == j && k != j){
