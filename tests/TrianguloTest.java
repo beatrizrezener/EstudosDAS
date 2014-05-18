@@ -38,7 +38,7 @@ public class TrianguloTest {
 	}
 	
 	@Test
-	public void testVerificaTriangulo() {
+	public void testVerificaTriangulo() throws Exception  {
 	 
 	boolean valido = t.verificaTriangulo(3, 3, 3);
 	 assertTrue(valido);
