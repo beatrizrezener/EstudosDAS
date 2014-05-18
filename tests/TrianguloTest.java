@@ -43,11 +43,19 @@ public class TrianguloTest {
 	boolean valido = t.verificaTriangulo(3, 3, 3);
 	 assertTrue(valido);
 	 
-	 valido = t.verificaTriangulo(5, 4, 10);
+	 valido = t.verificaTriangulo(5, 6, 10);
 	 assertTrue(valido);
 	 
-	 valido = t.verificaTriangulo(2, 1, 5);
-	 assertFalse(valido);
+	}
+	
+	@Test
+	public void veficarTrianguloInvalido(){
+		try{
+		  t.verificaTriangulo(1, 2, 5);
+		  fail("ERRROO");
+		}catch(Exception e){
+			
+		}
 	}
 	
 
