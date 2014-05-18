@@ -40,5 +40,17 @@ public class eratostenesTest {
      esperado.add(5);
 	 assertEquals(esperado, result);
 	}
+	
+	@Test
+	public void testSeven() {
+     ArrayList<Integer> result =  e.achaPrimo(7);
+     ArrayList<Integer> esperado = new ArrayList<Integer>();
+     esperado.add(2);
+     esperado.add(3);
+     esperado.add(5);
+     esperado.add(7);
+	 assertEquals(esperado, result);
+	}
 
 }
+
