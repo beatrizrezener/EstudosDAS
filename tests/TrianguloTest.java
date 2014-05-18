@@ -8,8 +8,11 @@ public class TrianguloTest {
 	@Test
 	public void test() {
 		Triangulo t = new Triangulo();
-		String tipoTriangulo = t.verificaTriangulo(3,3,3);
-		assertEquals(tipoTriangulo, "Equilátero");
+		String tipoEquilatero = t.verificaTriangulo(3,3,3);
+		assertEquals(tipoEquilatero, "Equilátero");
+		
+		String tipoIsoceles = t.verificaTriangulo(2,3,3);
+		assertEquals(tipoIsoceles, "Isoceles");
 	}
 
 }
