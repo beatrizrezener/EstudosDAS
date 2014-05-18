@@ -32,10 +32,18 @@ public class TrianguloTest {
 	@Test
 	public void testScaleno() {
 		
-		
 		String tipoScaleno = t.retornaTipoTriangulo(2, 1, 4);
 		assertEquals("Scaleno", tipoScaleno);
 		
+	}
+	
+	
+	@Test
+	public void testTriangulo() {
+	 boolean valido = t.vericaficaTraingulo(3, 3, 3);
+	 assertTrue(valido);
+		
+	}
 	}
 	
 	
