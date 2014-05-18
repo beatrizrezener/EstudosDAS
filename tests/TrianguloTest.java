@@ -18,6 +18,9 @@ public class TrianguloTest {
 	public void testIsoseles() {
 		String tipoIsoceles = t.verificaTriangulo(2,3,3);
 		assertEquals(tipoIsoceles, "Isoceles");
+		
+		tipoIsoceles = t.verificaTriangulo(4,4,10);
+		assertEquals(tipoIsoceles, "Isoceles");
 	}
 	
 	@Test
