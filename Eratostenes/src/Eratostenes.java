@@ -8,11 +8,11 @@ public class Eratostenes {
 		
 		ArrayList<Integer> numerosRecebidos = new ArrayList<Integer>();
 		
-		for(int cont : numerosRecebidos){
+		for(int cont = 2 ; cont <= i ; cont ++){
 		   numerosRecebidos.add(cont);
 		}
 		
-		ArrayList numerosPrimos = new ArrayList();
+		ArrayList<Integer>  numerosPrimos = new ArrayList<Integer> ();
 		numerosPrimos.add(2);
 		for(int valorCorrente : numerosRecebidos ){
 			  if(valorCorrente%2 != 0 ){
@@ -20,24 +20,6 @@ public class Eratostenes {
 			  }
 		}
 		
-		
-	/*	if(i==2){
-			numerosRecebidos.add(2);
-		}
-		else if (i==4) {
-			numerosRecebidos.add(2);
-			numerosRecebidos.add(3);
-		} else if(i == 5 || i==6){
-			numerosRecebidos.add(2);
-			numerosRecebidos.add(3);
-			numerosRecebidos.add(5);
-		} else if(i == 7){
-			numerosRecebidos.add(2);
-			numerosRecebidos.add(3);
-			numerosRecebidos.add(5);
-			numerosRecebidos.add(7);
-		}
-		*/
 		return numerosPrimos;
 	}
 
