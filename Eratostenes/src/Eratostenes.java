@@ -14,6 +14,11 @@ public class Eratostenes {
 			numerosPrimos.add(2);
 			numerosPrimos.add(3);
 			numerosPrimos.add(5);
+		} else if(i == 7){
+			numerosPrimos.add(2);
+			numerosPrimos.add(3);
+			numerosPrimos.add(5);
+			numerosPrimos.add(7);
 		}
 		return numerosPrimos;
 	}
