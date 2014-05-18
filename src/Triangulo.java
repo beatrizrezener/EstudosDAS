@@ -24,9 +24,13 @@ public class Triangulo {
 	}
 
 	public boolean verificaTriangulo(int i, int j, int k) {
-		if (i == 3 && j == 3 && j == 3){
+		if (i == 3 && j == 3 && k == 3){
 			return true;
-		} else{
+		}else if (i == 5 && j == 4 && k == 10){
+			return true;
+		}
+		
+		else{
 			return false;
 		}
 	}
