@@ -28,6 +28,8 @@ public class TrianguloTest {
 		
 		String tipoScaleno = t.verificaTriangulo(2, 1, 4);
 		assertEquals("Scaleno", tipoScaleno);
+		
+		
 	}
 	
 	
