@@ -4,18 +4,28 @@ import org.junit.Test;
 
 
 public class TrianguloTest {
-
+	Triangulo t = new Triangulo();
+	
 	@Test
-	public void test() {
-		Triangulo t = new Triangulo();
+	public void testEquilatero() {
+		
 		String tipoEquilatero = t.verificaTriangulo(3,3,3);
 		assertEquals(tipoEquilatero, "Equilátero");
-		
+	
+	}
+	
+	@Test
+	public void testIsoseles() {
 		String tipoIsoceles = t.verificaTriangulo(2,3,3);
 		assertEquals(tipoIsoceles, "Isoceles");
+	}
+	@Test
+	public void testScaleno() {
 		
 		String tipoScaleno = t.verificaTriangulo(2, 1, 4);
 		assertEquals("Scaleno", tipoScaleno);
 	}
+	
+	
 
 }
