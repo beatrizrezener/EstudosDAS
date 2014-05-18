@@ -40,10 +40,10 @@ public class TrianguloTest {
 	
 	@Test
 	public void testTriangulo() {
-	 boolean valido = t.vericaficaTraingulo(3, 3, 3);
+	 boolean valido = t.verificaTriangulo(3, 3, 3);
 	 assertTrue(valido);
 		
-	}
+	
 	}
 	
 	

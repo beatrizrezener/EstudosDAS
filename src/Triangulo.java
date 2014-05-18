@@ -23,4 +23,8 @@ public class Triangulo {
 		return "erro";
 	}
 
+	public boolean verificaTriangulo(int i, int j, int k) {
+		return true;
+	}
+
 }
