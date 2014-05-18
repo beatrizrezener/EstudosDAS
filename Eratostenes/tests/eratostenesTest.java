@@ -9,7 +9,6 @@ import org.junit.Test;
 import src.Eratostenes;
 
 public class eratostenesTest {
-
 	Eratostenes e = new Eratostenes();
 	
 	
