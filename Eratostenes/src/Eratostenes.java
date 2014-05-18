@@ -15,11 +15,12 @@ public class Eratostenes {
 		ArrayList<Integer>  numerosPrimos = new ArrayList<Integer> ();
 		numerosPrimos.add(2);
 		for(int valorCorrente : numerosRecebidos ){
-			  if(valorCorrente%2 != 0 ){
+			  
+			if(valorCorrente%2 != 0 && valorCorrente != 9){
 				  numerosPrimos.add(valorCorrente);
 			  }
+			  
 		}
-		
 		return numerosPrimos;
 	}
 
