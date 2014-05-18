@@ -6,6 +6,8 @@ import java.util.ArrayList;
 
 import org.junit.Test;
 
+import src.Eratostenes;
+
 public class eratostenesTest {
 
 	Eratostenes e = new Eratostenes();
