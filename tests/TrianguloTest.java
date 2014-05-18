@@ -37,16 +37,18 @@ public class TrianguloTest {
 		
 	}
 	
-	
 	@Test
-	public void testTriangulo() {
-	 boolean valido = t.verificaTriangulo(3, 3, 3);
+	public void testVerificaTriangulo() {
+	 
+	boolean valido = t.verificaTriangulo(3, 3, 3);
+	 assertTrue(valido);
+	 
+	 valido = t.verificaTriangulo(5, 4, 10);
 	 assertTrue(valido);
 	 
 	 valido = t.verificaTriangulo(2, 1, 5);
 	 assertFalse(valido);
 	}
-	
 	
 
 }
