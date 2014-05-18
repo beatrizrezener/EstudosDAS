@@ -12,7 +12,6 @@ public class TrianguloTest {
 		assertEquals(tipoEquilatero, "Equilátero");
 	    tipoEquilatero = t.verificaTriangulo(4,4,4);
 		assertEquals(tipoEquilatero, "Equilátero");
-	
 	}
 	
 	@Test
