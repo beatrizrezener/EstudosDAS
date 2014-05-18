@@ -7,14 +7,14 @@ public class Triangulo {
 		}
 	     if(i==2 && j==1 && k==4){
 			return "Scaleno";
-		} else  if(i == 4 && j == 4 && k == 10){
+		} 
+	     if(i == j && k != j){
 			return "Isoceles";
 		 }
-	      else  if(i == 5 && j == 8 && k == 5){
+	      else if(i == k && k != j){
 				return "Isoceles";
-	      }
-		
-	    if(i == 2 && j == 3 && k == 3){
+	     }
+	      else if(j == k &&  i != k){
 			return "Isoceles"; 
 		}
 		return "erro";
