@@ -10,7 +10,7 @@ public class Eratostenes {
 		if (i==4) {
 			numerosPrimos.add(2);
 			numerosPrimos.add(3);
-		} else if(i == 5){
+		} else if(i == 5 || i==6){
 			numerosPrimos.add(2);
 			numerosPrimos.add(3);
 			numerosPrimos.add(5);
