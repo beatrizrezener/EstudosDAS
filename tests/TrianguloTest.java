@@ -42,8 +42,9 @@ public class TrianguloTest {
 	public void testTriangulo() {
 	 boolean valido = t.verificaTriangulo(3, 3, 3);
 	 assertTrue(valido);
-		
-	
+	 
+	 valido = t.verificaTriangulo(2, 1, 5);
+	 assertFalse(valido);
 	}
 	
 	
