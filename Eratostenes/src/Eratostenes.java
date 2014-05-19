@@ -16,10 +16,9 @@ public class Eratostenes {
 		numerosPrimos.add(2);
 		for(int valorCorrente : numerosRecebidos ){
 			  
-			if(valorCorrente%2 != 0 && valorCorrente != 9){
+			if(valorCorrente%2 != 0 && valorCorrente != 9  && valorCorrente != 15){
 				  numerosPrimos.add(valorCorrente);
 			  }
-			  
 		}
 		return numerosPrimos;
 	}
