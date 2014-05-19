@@ -12,30 +12,33 @@ public class Eratostenes {
 			numerosRecebidos.add(cont);
 		}
 
-		ArrayList<Integer> numerosPrimos = new ArrayList<Integer>();
+		int n =2;
 
-		for (int valorCorrente : numerosRecebidos) {
-			if (valorCorrente == 2) {
-				numerosPrimos.add(2);
-			}
-			if (valorCorrente % 2 != 0 && valorCorrente != 9
-					&& valorCorrente != 15) {
-				numerosPrimos.add(valorCorrente);
-			}
-		}
 
-		ArrayList<Integer> numerosNaoMultiplosDeDois = new ArrayList<Integer>();
-
-		for (int valorCorrente : numerosPrimos) {
-			if (valorCorrente == 3) {
-				numerosNaoMultiplosDeDois.add(3);
-			}
-			if (valorCorrente % 3 != 0) {
-				numerosNaoMultiplosDeDois.add(valorCorrente);
-			}
-		}
-
-		return numerosNaoMultiplosDeDois;
+		
+		ArrayList<Integer> numerosNaoMultiplosDeDois = adicionaNumerosMultiplos(n, numerosRecebidos);
+	
+		ArrayList<Integer> numerosNaoMultiplosDeTres = adicionaNumerosMultiplos((n+1), numerosNaoMultiplosDeDois);		
+	
+		return numerosNaoMultiplosDeTres;
 	}
+
+
+
+public ArrayList<Integer> adicionaNumerosMultiplos(int n, ArrayList<Integer> numerosRecebidos){
+	
+	
+	ArrayList<Integer> numerosNaoMultiplosDeDois = new ArrayList<Integer>();
+
+	for (int valorCorrente : numerosRecebidos) {
+		if (valorCorrente == n) {
+			numerosNaoMultiplosDeDois.add(n);
+		}
+		if (valorCorrente % n != 0) {
+			numerosNaoMultiplosDeDois.add(valorCorrente);
+		}
+	}
+	return numerosNaoMultiplosDeDois;
+}
 
 }
