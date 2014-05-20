@@ -95,5 +95,40 @@ public class eratostenesTest {
 	 assertEquals(esperado, result);
 	}
 	
+	@Test
+	public void test30() {
+	 setaArray(30);
+     esperado.add(2);
+     esperado.add(3);
+     esperado.add(5);
+     esperado.add(7);
+     esperado.add(11);
+     esperado.add(13);
+     esperado.add(17);
+     esperado.add(19);
+     esperado.add(23);
+     esperado.add(29);
+	 assertEquals(esperado, result);
+	}
+	
+	
+	@Test
+	public void test40() {
+	 setaArray(40);
+     esperado.add(2);
+     esperado.add(3);
+     esperado.add(5);
+     esperado.add(7);
+     esperado.add(11);
+     esperado.add(13);
+     esperado.add(17);
+     esperado.add(19);
+     esperado.add(23);
+     esperado.add(29);
+     esperado.add(31);
+     esperado.add(37);
+	 assertEquals(esperado, result);
+	}
+	
 }
 
