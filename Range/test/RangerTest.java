@@ -56,15 +56,40 @@ public class RangerTest {
 	public void testValidacao() throws ValidaResultadoException {
 		Ranger ranger = new Ranger();
 		
-		
 		try{
 			String retorno = ranger.getIntervalo("{0,6]");
 			fail("ERROO");
 		
 		}catch(ValidaResultadoException e){
-			
+			//Nada a fazer
 		}	
 		
 	}
-
+	
+	@Test
+	public void testValidacao2() throws ValidaResultadoException {
+		Ranger ranger = new Ranger();
+		
+		try{
+			String retorno = ranger.getIntervalo("{%,78");
+			fail("ERROO");
+			
+		}catch(ValidaResultadoException e){
+			//Nada a fazer
+		}	
+		
+	}
+	
+	@Test
+	public void testValidacao3() throws ValidaResultadoException {
+		Ranger ranger = new Ranger();
+		
+		try{
+			String retorno = ranger.getIntervalo("[][]$#378sd45sdjkgu05");
+			fail("ERROO");
+		}catch(ValidaResultadoException e){
+			//Nada a fazer
+		}	
+		
+	}
 }
