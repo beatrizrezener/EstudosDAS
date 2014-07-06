@@ -28,6 +28,19 @@ public class RangerTest {
 		String retorno = ranger.getIntervalo("[0,1]");
 		assertEquals("01", retorno);
 	}
-
+	
+	@Test
+	public void testCaseParenteses1() {
+		Ranger ranger = new Ranger();
+		String retorno = ranger.getIntervalo("(0,5)");
+		assertEquals("1234", retorno);
+	}
+	
+	@Test
+	public void testValidacao() {
+		Ranger ranger = new Ranger();
+		String retorno = ranger.getIntervalo("[0,6)");
+		assertEquals("012345", retorno);
+	}
 
 }
